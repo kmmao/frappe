@@ -156,6 +156,45 @@ frappe.Application = class Application {
 			csrf_token: frappe.csrf_token,
 			user: frappe.session.user,
 		});
+
+		// 添加水印
+		let username = frappe.user.full_name();
+		if (username === "You" || !username) {
+				username = frappe.user.name;
+		}
+		console.log(`Welcome, ${username}!`);
+		let watermarkText = username + " - 专用";
+
+		// 获取页面的宽度和高度
+		let pageWidth = document.body.clientWidth;
+		let pageHeight = document.body.clientHeight;
+
+		// 设置水印的行高和列宽
+		let rowHeight = 200; // 每一行水印的高度
+		let colWidth = 400;  // 每一列水印的宽度
+
+		// 计算行数和列数
+		let rows = Math.ceil(pageHeight / rowHeight);
+		let cols = Math.ceil(pageWidth / colWidth);
+
+		// 创建并添加水印
+		for (let i = 0; i < rows; i++) {
+				for (let j = 0; j < cols; j++) {
+						let watermark = document.createElement('div');
+						watermark.innerHTML = watermarkText;
+						watermark.style.position = 'fixed';
+						watermark.style.top = (i * rowHeight) + 'px';
+						watermark.style.left = (j * colWidth) + 'px';
+						watermark.style.transform = 'rotate(-45deg)';
+						watermark.style.fontSize = '30px'; // 调整字体大小
+						watermark.style.color = 'rgba(0, 0, 0, 0.1)';
+						watermark.style.whiteSpace = 'nowrap';
+						watermark.style.pointerEvents = 'none';
+						watermark.style.zIndex = '9999';
+
+						document.body.appendChild(watermark);
+				}
+		}
 	}
 
 	set_route() {
