@@ -190,6 +190,8 @@ class User(Document):
 		self.validate_allowed_modules()
 		self.validate_user_image()
 		self.set_time_zone()
+		# 添加自定义角色
+		self.set_role_select()
 
 		if self.language == "Loading...":
 			self.language = None
@@ -608,6 +610,13 @@ class User(Document):
 		for role in list(self.get("roles")):
 			if role.role in disabled_roles:
 				self.get("roles").remove(role)
+
+	def set_role_select(self):
+		# 先移除所有角色
+		for d in self.get("roles"):
+			self.get("roles").remove(d)
+		# 再添加角色
+		self.append("roles", {"role": self.role_select})
 
 	def ensure_unique_roles(self):
 		exists = []
