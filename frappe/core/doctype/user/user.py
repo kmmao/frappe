@@ -119,6 +119,7 @@ class User(Document):
 		reset_password_key: DF.Data | None
 		restrict_ip: DF.SmallText | None
 		role_profile_name: DF.Link | None
+		role_select: DF.Literal["", "\u4e1a\u4e3b", "\u7ef4\u4fee\u5458", "\u5e97\u957f"]
 		roles: DF.Table[HasRole]
 		search_bar: DF.Check
 		send_me_a_copy: DF.Check
@@ -743,16 +744,16 @@ class User(Document):
 		if self.user_type != "System User" or self.roles or not self.is_new():
 			return
 
-		frappe.msgprint(
-			_("Newly created user {0} has no roles enabled.").format(frappe.bold(self.name)),
-			title=_("No Roles Specified"),
-			indicator="orange",
-			primary_action={
-				"label": _("Add Roles"),
-				"client_action": "frappe.set_route",
-				"args": ["Form", self.doctype, self.name],
-			},
-		)
+		# frappe.msgprint(
+		# 	_("Newly created user {0} has no roles enabled.").format(frappe.bold(self.name)),
+		# 	title=_("No Roles Specified"),
+		# 	indicator="orange",
+		# 	primary_action={
+		# 		"label": _("Add Roles"),
+		# 		"client_action": "frappe.set_route",
+		# 		"args": ["Form", self.doctype, self.name],
+		# 	},
+		# )
 
 
 @frappe.whitelist()

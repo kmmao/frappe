@@ -4,15 +4,15 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2020-03-02 15:17:13.041650",
+ "modified": "2025-01-09 16:57:34.023243",
  "modified_by": "Administrator",
  "module": "Desk",
  "name": "user-profile",
  "owner": "Administrator",
- "page_name": "User Profile",
+ "page_name": "user-profile",
  "roles": [
   {
-   "role": "All"
+   "role": "Administrator"
   }
  ],
  "script": null,
