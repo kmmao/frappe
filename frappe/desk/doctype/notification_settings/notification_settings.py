@@ -82,7 +82,7 @@ def toggle_notifications(user: str, enable: bool = False):
 
 	if settings.enabled != enable:
 		settings.enabled = enable
-		settings.save()
+		settings.save(ignore_permissions=True)
 
 
 @frappe.whitelist()
