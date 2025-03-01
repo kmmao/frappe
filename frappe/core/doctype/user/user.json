@@ -761,7 +761,7 @@
    "label": "Navigation Settings"
   },
   {
-   "default": "1",
+   "default": "0",
    "fieldname": "search_bar",
    "fieldtype": "Check",
    "label": "Search Bar"
@@ -780,7 +780,7 @@
    "label": "List Settings"
   },
   {
-   "default": "1",
+   "default": "0",
    "fieldname": "list_sidebar",
    "fieldtype": "Check",
    "label": "Sidebar"
@@ -889,7 +889,7 @@
    "link_fieldname": "user"
   }
  ],
- "modified": "2025-03-02 02:39:49.389820",
+ "modified": "2025-03-02 03:33:59.882472",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
