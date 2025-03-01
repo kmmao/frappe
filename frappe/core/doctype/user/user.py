@@ -119,7 +119,7 @@ class User(Document):
 		reset_password_key: DF.Data | None
 		restrict_ip: DF.SmallText | None
 		role_profile_name: DF.Link | None
-		role_select: DF.Literal["", "\u4e1a\u4e3b", "\u7ef4\u4fee\u5458", "\u5e97\u957f"]
+		role_select: DF.Literal["", "\u603b\u52a9", "\u8fd0\u8425\u7ecf\u7406", "\u8fd0\u8425\u5458", "\u4e1a\u52a1\u5408\u4f19\u4eba", "\u4e1a\u52a1\u652f\u6301", "\u4e1a\u52a1\u7ecf\u7406", "\u8d22\u52a1\u7ecf\u7406", "\u8d22\u52a1\u5458", "\u91c7\u9500\u7ecf\u7406", "\u91c7\u9500\u5458", "\u6570\u636e\u5458", "\u5ba2\u670d", "\u5e97\u957f", "\u5408\u4f19\u4eba", "\u4e1a\u4e3b", "\u7ef4\u4fee\u5458"]
 		roles: DF.Table[HasRole]
 		search_bar: DF.Check
 		send_me_a_copy: DF.Check
@@ -191,7 +191,8 @@ class User(Document):
 		self.validate_user_image()
 		self.set_time_zone()
 		# 添加自定义角色
-		self.set_role_select()
+		if (self.name not in ["Administrator", "Guest"]):
+			self.set_role_select()
 
 		if self.language == "Loading...":
 			self.language = None
@@ -612,11 +613,13 @@ class User(Document):
 				self.get("roles").remove(role)
 
 	def set_role_select(self):
-		# 先移除所有角色
-		for d in self.get("roles"):
-			self.get("roles").remove(d)
-		# 再添加角色
-		self.append("roles", {"role": self.role_select})
+		# 如果自定义的角色为空，则不处理
+		if self.role_select:
+			# 先移除所有角色
+			for d in self.get("roles"):
+				self.get("roles").remove(d)
+			# 再添加角色
+			self.append("roles", {"role": self.role_select})
 
 	def ensure_unique_roles(self):
 		exists = []

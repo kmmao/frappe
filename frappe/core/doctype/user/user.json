@@ -636,6 +636,7 @@
    "options": "Light\nDark\nAutomatic"
   },
   {
+   "default": "\u7a7a\u6a21\u5757",
    "fieldname": "module_profile",
    "fieldtype": "Link",
    "label": "Module Profile",
@@ -825,7 +826,7 @@
    "fieldname": "role_select",
    "fieldtype": "Select",
    "label": "\u89d2\u8272",
-   "options": "\n\u4e1a\u4e3b\n\u7ef4\u4fee\u5458\n\u5e97\u957f"
+   "options": "\n\u603b\u52a9\n\u8fd0\u8425\u7ecf\u7406\n\u8fd0\u8425\u5458\n\u4e1a\u52a1\u5408\u4f19\u4eba\n\u4e1a\u52a1\u652f\u6301\n\u4e1a\u52a1\u7ecf\u7406\n\u8d22\u52a1\u7ecf\u7406\n\u8d22\u52a1\u5458\n\u91c7\u9500\u7ecf\u7406\n\u91c7\u9500\u5458\n\u6570\u636e\u5458\n\u5ba2\u670d\n\u5e97\u957f\n\u5408\u4f19\u4eba\n\u4e1a\u4e3b\n\u7ef4\u4fee\u5458"
   }
  ],
  "icon": "fa fa-user",
@@ -888,7 +889,7 @@
    "link_fieldname": "user"
   }
  ],
- "modified": "2025-01-10 02:22:52.153301",
+ "modified": "2025-03-02 02:39:49.389820",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
@@ -921,6 +922,7 @@
  "route": "user",
  "search_fields": "full_name",
  "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"5nnLaQeoFa\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Get started</b><br></span>\",\"col\":12}},{\"id\":\"HXRmktXYHy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"DocType\",\"col\":3}},{\"id\":\"pYALX3MwBW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customize Form\",\"col\":3}},{\"id\":\"XC78DuYB65\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Report\",\"col\":3}},{\"id\":\"XPm50Ppq3J\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Client Script\",\"col\":3}},{\"id\":\"yoU6nWiT83\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Server Script\",\"col\":3}},{\"id\":\"5UgFESBY0N\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Print Format Builder\",\"col\":3}},{\"id\":\"0gE0s-S70E\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"System Settings\",\"col\":3}},{\"id\":\"62hseENHbd\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"tOCrOgLW1G\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Components to build your app</b></span>\",\"col\":12}},{\"id\":\"cJ6CVsa8qW\",\"type\":\"card\",\"data\":{\"card_name\":\"Models\",\"col\":4}},{\"id\":\"MmEJpjEdGR\",\"type\":\"card\",\"data\":{\"card_name\":\"Views\",\"col\":4}},{\"id\":\"2ZdtgxQZqq\",\"type\":\"card\",\"data\":{\"card_name\":\"Customization\",\"col\":4}},{\"id\":\"NPFolijIcb\",\"type\":\"card\",\"data\":{\"card_name\":\"Scripting\",\"col\":4}},{\"id\":\"BIHjudL0T_\",\"type\":\"card\",\"data\":{\"card_name\":\"Modules\",\"col\":4}},{\"id\":\"iK3JQ9RXJE\",\"type\":\"card\",\"data\":{\"card_name\":\"Packages\",\"col\":4}},{\"id\":\"TiO9FCUUeC\",\"type\":\"card\",\"data\":{\"card_name\":\"System Logs\",\"col\":4}}]",
+ "content": "[{\"id\":\"5nnLaQeoFa\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>\u5f00\u59cb</b><br></span>\",\"col\":12}},{\"id\":\"HXRmktXYHy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"DocType\",\"col\":3}},{\"id\":\"pYALX3MwBW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customize Form\",\"col\":3}},{\"id\":\"XC78DuYB65\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Report\",\"col\":3}},{\"id\":\"XPm50Ppq3J\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Client Script\",\"col\":3}},{\"id\":\"yoU6nWiT83\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Server Script\",\"col\":3}},{\"id\":\"5UgFESBY0N\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Print Format Builder\",\"col\":3}},{\"id\":\"0gE0s-S70E\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"System Settings\",\"col\":3}},{\"id\":\"62hseENHbd\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"tOCrOgLW1G\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>\u6784\u5efa\u60a8\u7684\u5e94\u7528\u7684\u7ec4\u4ef6</b></span>\",\"col\":12}},{\"id\":\"cJ6CVsa8qW\",\"type\":\"card\",\"data\":{\"card_name\":\"Models\",\"col\":4}},{\"id\":\"MmEJpjEdGR\",\"type\":\"card\",\"data\":{\"card_name\":\"Views\",\"col\":4}},{\"id\":\"2ZdtgxQZqq\",\"type\":\"card\",\"data\":{\"card_name\":\"Customization\",\"col\":4}},{\"id\":\"NPFolijIcb\",\"type\":\"card\",\"data\":{\"card_name\":\"Scripting\",\"col\":4}},{\"id\":\"BIHjudL0T_\",\"type\":\"card\",\"data\":{\"card_name\":\"Modules\",\"col\":4}},{\"id\":\"iK3JQ9RXJE\",\"type\":\"card\",\"data\":{\"card_name\":\"Packages\",\"col\":4}},{\"id\":\"TiO9FCUUeC\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7cfb\u7edf\u65e5\u5fd7\",\"col\":4}}]",
  "creation": "2021-01-02 10:51:16.579957",
  "custom_blocks": [],
  "docstatus": 0,
@@ -92,66 +92,6 @@
    "link_type": "DocType",
    "onboard": 0,
    "only_for": "",
-   "type": "Link"
-  },
-  {
-   "description": "Monitor logs for errors, background jobs, communications, and user activity",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "System Logs",
-   "link_count": 5,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Background Jobs",
-   "link_count": 0,
-   "link_to": "RQ Job",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Scheduled Jobs Logs",
-   "link_count": 0,
-   "link_to": "Scheduled Job Log",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Error Logs",
-   "link_count": 0,
-   "link_to": "Error Log",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Communication Logs",
-   "link_count": 0,
-   "link_to": "Communication",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Activity Log",
-   "link_count": 0,
-   "link_to": "Activity Log",
-   "link_type": "DocType",
-   "onboard": 0,
    "type": "Link"
   },
   {
@@ -321,9 +261,79 @@
    "onboard": 0,
    "only_for": "",
    "type": "Link"
+  },
+  {
+   "description": "Monitor logs for errors, background jobs, communications, and user activity",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7cfb\u7edf\u65e5\u5fd7",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u540e\u53f0\u4f5c\u4e1a",
+   "link_count": 0,
+   "link_to": "RQ Job",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u5b9a\u65f6\u4efb\u52a1\u65e5\u5fd7",
+   "link_count": 0,
+   "link_to": "Scheduled Job Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u9519\u8bef\u65e5\u5fd7",
+   "link_count": 0,
+   "link_to": "Error Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u901a\u4fe1\u65e5\u5fd7",
+   "link_count": 0,
+   "link_to": "Communication",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u6d3b\u52a8\u65e5\u5fd7",
+   "link_count": 0,
+   "link_to": "Activity Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u521b\u5efa\u8ba2\u5355\u5931\u8d25\u65e5\u5fd7",
+   "link_count": 0,
+   "link_to": "Create Order Error Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-01-09 16:52:00.479578",
+ "modified": "2025-02-24 22:47:20.169685",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "Build",
