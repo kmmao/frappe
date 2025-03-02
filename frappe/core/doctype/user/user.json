@@ -280,6 +280,7 @@
   {
    "fieldname": "mobile_no",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Mobile No",
    "options": "Phone",
    "unique": 1
@@ -780,7 +781,7 @@
    "label": "List Settings"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "list_sidebar",
    "fieldtype": "Check",
    "label": "Sidebar"
@@ -825,8 +826,10 @@
   {
    "fieldname": "role_select",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "\u89d2\u8272",
-   "options": "\n\u603b\u52a9\n\u8fd0\u8425\u7ecf\u7406\n\u8fd0\u8425\u5458\n\u4e1a\u52a1\u5408\u4f19\u4eba\n\u4e1a\u52a1\u652f\u6301\n\u4e1a\u52a1\u7ecf\u7406\n\u8d22\u52a1\u7ecf\u7406\n\u8d22\u52a1\u5458\n\u91c7\u9500\u7ecf\u7406\n\u91c7\u9500\u5458\n\u6570\u636e\u5458\n\u5ba2\u670d\n\u5e97\u957f\n\u5408\u4f19\u4eba\n\u4e1a\u4e3b\n\u7ef4\u4fee\u5458"
+   "options": "\n\u603b\u52a9\n\u8fd0\u8425\u7ecf\u7406\n\u8fd0\u8425\u5458\n\u5408\u4f19\u4eba\n\u4e1a\u52a1\u652f\u6301\n\u4e1a\u52a1\u7ecf\u7406\n\u8d22\u52a1\u7ecf\u7406\n\u8d22\u52a1\u5458\n\u91c7\u9500\u7ecf\u7406\n\u6570\u636e\u5458\n\u5ba2\u670d\n\u5e97\u957f\n\u4e1a\u4e3b\n\u7ef4\u4fee\u5458"
   }
  ],
  "icon": "fa fa-user",
@@ -889,7 +892,7 @@
    "link_fieldname": "user"
   }
  ],
- "modified": "2025-03-02 03:33:59.882472",
+ "modified": "2025-03-02 06:09:34.243776",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
