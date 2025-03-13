@@ -17,6 +17,8 @@ export default {
 			symbol: __("K", null, "Number system"),
 		},
 	],
+	china: [
+	],
 	indian: [
 		{
 			divisor: 1.0e7,

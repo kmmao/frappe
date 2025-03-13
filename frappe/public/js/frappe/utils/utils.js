@@ -1189,6 +1189,8 @@ Object.assign(frappe.utils, {
 			return number_systems.indian;
 		} else if (country == "Nepal") {
 			return number_systems.nepalese;
+		} else if (country == "China") {
+			return number_systems.china;
 		} else {
 			return number_systems.default;
 		}
