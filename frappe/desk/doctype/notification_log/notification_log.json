@@ -16,7 +16,8 @@
   "attachment_link",
   "open_reference_document",
   "from_user",
-  "link"
+  "link",
+  "result"
  ],
  "fields": [
   {
@@ -98,12 +99,18 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Link"
+  },
+  {
+   "default": "0",
+   "fieldname": "result",
+   "fieldtype": "Check",
+   "label": "\u901a\u77e5\u7ed3\u679c"
   }
  ],
  "hide_toolbar": 1,
  "in_create": 1,
  "links": [],
- "modified": "2024-08-03 09:38:10.497711",
+ "modified": "2025-03-13 23:04:15.308474",
  "modified_by": "Administrator",
  "module": "Desk",
  "name": "Notification Log",
